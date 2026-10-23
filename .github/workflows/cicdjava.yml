@@ -73,7 +73,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
         run: |
           sh ./mvnw --batch-mode --no-transfer-progress \
-            org.sonarsource.scanner.maven:sonar-maven-plugin:5.8.0.7211:sonar \
+            org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
             -Dsonar.projectKey=jhankar2020_gitHubActons-CICD-Java \
             -Dsonar.organization=jhankar2020 \
             -Dsonar.host.url=https://sonarcloud.io
